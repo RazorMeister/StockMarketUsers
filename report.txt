@@ -1,0 +1,7 @@
+Sprawozdanie zespołu zarządzania użytkownikami.
+
+Udało nam się przygotować podstawową wersję zarządzania użytkownikami oraz autoryzacji z użyciem JWT (json web tokens).
+Aplikacja została przygotowana we frameworku nestJs z użyciem TypeScripta. Do komunikacji z bazą danych MySQL używana jest biblioteka TypeORM.
+Endpointy REST'owe aplikacji zostały udokumentowane za pomocą narzędzia Swagger.
+
+Na chwilę obecną nie występują żadne problemy związane z tworzeniem aplikacji.
