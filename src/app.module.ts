@@ -40,9 +40,10 @@ import * as Yup from 'yup';
         password: config.get<string>('TYPEORM_PASSWORD'),
         database: config.get<string>('TYPEORM_DATABASE'),
         synchronize: true,
-        entities: [__dirname + '/**/*.entity.{ts,js}'],
-        migrations: ['dist/migrations/**/*.js'],
-        subscribers: ['dist/subscriber/**/*.js'],
+        entities: ['/**/*.entity.{ts,js}'],
+        migrations: ['dist/src/migrations/**/*.js'],
+        subscribers: ['dist/src/subscriber/**/*.js'],
+        autoLoadEntities: true,
         cli: {
           migrationsDir: config.get<string>('TYPEORM_MIGRATIONS_DIR'),
           subscribersDir: config.get<string>('TYPEORM_SUBSCRIBERS_DIR'),
